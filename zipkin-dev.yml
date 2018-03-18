@@ -1,0 +1,15 @@
+server:
+  port: ${ZIPKIN_PORT:9411}
+
+spring:
+  datasource:
+    initialize: false
+  sleuth:
+    enabled: true
+#  sampler:
+#    probability: 1
+#    percentage: 1
+
+zipkin:
+  store:
+    type: mem
