@@ -14,7 +14,8 @@ spring:
         output:
           destination: reservations
   rabbitmq:
-    host: http://cloudapp-rabbitmq-server
+    host: cloudapp-rabbitmq-server
+    port: 5672
 
 # security.oauth2.resource.userInfoUri=http://localhost:9191/uaa/user
 

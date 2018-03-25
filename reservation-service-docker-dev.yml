@@ -16,5 +16,5 @@ spring:
           # ensure that the Q is durable
           durableSubscription: true
   rabbitmq:
-    host: http://cloudapp-rabbitmq-server
+    host: cloudapp-rabbitmq-server
     port: 5672
