@@ -1,0 +1,2 @@
+server:
+  port: ${HYSTRIXDASHBOARD_PORT:7979}
