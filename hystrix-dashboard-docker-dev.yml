@@ -1,2 +1,7 @@
 server:
   port: ${HYSTRIXDASHBOARD_PORT:7979}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://cloudapp-eureka-server:${EUREKASERVER_PORT:8761}/eureka
