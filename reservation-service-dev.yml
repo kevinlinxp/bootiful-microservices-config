@@ -1,0 +1,20 @@
+message: nihao Adelaide!
+
+server:
+  port: 8000
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          # You can use @EnableBinding to bind your application to a channel. Input and
+          # output channels with the same destination are connected.
+          destination: reservations
+          # ensures 1 node in a group gets message (point-to-point, not a broadcast)
+          group: reservations-group
+          # ensure that the Q is durable
+          durableSubscription: true
+  rabbitmq:
+    host: localhost
+    port: 5672
